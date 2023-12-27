@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Calculator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="hero">
+        </section>
+        <section class="calorie-app">
+            <h1>Calorie Calculator</h1>
+            <form>
+                <fieldset>
+                    <label for="ageInput">Age</label>
+                    <input type="number" name="ageInput" id="ageInput" required placeholder="Type in your age">
+                    <label for="genderInput">Gender</label>
+                    <select name="genderInput" id="genderInput" required>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="non-binary">Non-Binary</option>
+                    </select>
+                    <label for="heightInput">Height</label>
+                    <input type="number" name="heightInput" id="heightInput" required placeholder="Height in cm">
+                    <label for="weightInput">Weight</label>
+                    <input type="number" name="weightInput" id="weightInput" required placeholder="Weight in kg">
+                    <input type="submit" id="submit" name="submit" value="Calculate">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
