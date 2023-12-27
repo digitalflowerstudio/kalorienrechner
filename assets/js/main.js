@@ -14,7 +14,7 @@ const calCalc = () => {
   let showResult = (calories) => {
     result.innerHTML = `Your optimal metabolic rate is: <span>${calories.toFixed(
       2
-    )}</span> calories a day.<br><a href="#" id="rs">Change Input</a>`;
+    )}</span>calories a day.<br><a href="#" id="rs">Change Input</a>`;
     result.style.display = "";
     form.style.display = "none";
     error.style.display = "none";

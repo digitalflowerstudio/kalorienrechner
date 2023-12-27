@@ -74,9 +74,8 @@ h2 {
 /* Canvas */
 
 spline-viewer {
-  position: fixed;
-  top: 42%;
-  left: 67%;
+  width: 100px;
+  height: 100px;
 }
 /* Header Styles */
 
@@ -85,7 +84,7 @@ header {
   height: 3rem;
   font-family: "VisbyEB";
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   padding-left: 1rem;
 }
