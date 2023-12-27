@@ -1,11 +1,6 @@
 /* Font Imports */
 
 @font-face {
-  font-family: "Metal";
-  src: url(/assets/fonts/metal-thorn-font-1703642728-0/metalthornregular-0w43g.ttf);
-}
-
-@font-face {
   font-family: "VisbyEB";
   src: url(/assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-extrabold.otf);
 }
@@ -30,7 +25,9 @@
 
 body {
   width: 100%;
-  height: calc(100lvh - 5rem);
+  display: flex;
+  flex-direction: column;
+  min-height: 100lvh;
 }
 
 /* Typography */
@@ -78,9 +75,15 @@ h2 {
 header {
   background-color: black;
   height: 3rem;
-  padding-left: 1rem;
-  padding-top: 0.2rem;
   font-family: "VisbyEB";
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+header h2 {
+  display: flex;
 }
 
 /* Footer Styles */
@@ -90,7 +93,6 @@ footer {
   height: 2rem;
   color: white;
   font-size: 0.7rem;
-  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,6 +111,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 /* Form Styles */
@@ -119,7 +122,6 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100lvh - 5rem);
   gap: 1rem;
 }
 
@@ -147,7 +149,7 @@ form fieldset {
   flex-direction: column;
   justify-content: center;
   gap: 0.3rem;
-  width: 15rem;
+  width: 50%;
   background-color: whitesmoke;
   padding: 1rem;
   border-radius: 1rem;
