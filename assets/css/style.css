@@ -74,10 +74,10 @@ h2 {
 /* Canvas */
 
 spline-viewer {
-  height: 200x;
-  width: 150px;
+  position: fixed;
+  top: 42%;
+  left: 67%;
 }
-
 /* Header Styles */
 
 header {
