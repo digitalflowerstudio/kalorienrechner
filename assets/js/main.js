@@ -11,8 +11,8 @@ const calCalc = () => {
   };
 
   // Anzeigen der Ergebnisse
-  let showResult = (calories) => {
-    result.innerHTML = `Your optimal metabolic rate is: <span>${calories.toFixed(
+  let showResult = (finalCalories) => {
+    result.innerHTML = `Your optimal metabolic rate is: <span>${finalCalories.toFixed(
       2
     )}</span>calories a day.<br><a href="#" id="rs">Change Input</a>`;
     result.style.display = "";
@@ -62,8 +62,26 @@ const calCalc = () => {
       calories = 66.47 + 11 * weight + 2.5 * height - 5 * age;
     }
 
+    // PAL Activity Faktor Formel
+
+    let pal = 0;
+    if (form.palInput.value == "little") {
+      pal = 1.2;
+    } else if (form.palInput.value == "light") {
+      pal = 1.375;
+    } else if (form.palInput.value == "moderate") {
+      pal = 1.55;
+    } else if (form.palInput.value == "hard") {
+      pal = 1.725;
+    } else {
+      pal = 1.9;
+    }
+
+    // Finaler Kalorienverbraucht
+    let finalCalories = calories * pal;
+
     // Ergebnis Anzeigen
-    showResult(calories);
+    showResult(finalCalories);
   };
 
   // Beobachten der Interaktionen mit den Buttons

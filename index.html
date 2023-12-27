@@ -34,6 +34,14 @@
                     <input type="number" name="heightInput" id="heightInput" required placeholder="Height in cm">
                     <label for="weightInput">Weight</label>
                     <input type="number" name="weightInput" id="weightInput" required placeholder="Weight in kg">
+                    <label for="palInput">Physical Activity</label>
+                    <select name="palInput" id="palInput">
+                        <option value="little">Little to no exercise</option>
+                        <option value="light" selected>Light exercise 1 or 2 times a week</option>
+                        <option value="moderate">Moderate exercise 2 or 3 times a week</option>
+                        <option value="hard">Physical job or hard exercise</option>
+                        <option value="ath">Athlete</option>
+                    </select>
                     <input type="submit" id="submit" name="submit" value="Calculate">
                 </fieldset>
             </form>
