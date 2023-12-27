@@ -1,8 +1,23 @@
-/* Imports */
+/* Font Imports */
 
 @font-face {
   font-family: "Metal";
   src: url(/assets/fonts/metal-thorn-font-1703642728-0/metalthornregular-0w43g.ttf);
+}
+
+@font-face {
+  font-family: "VisbyEB";
+  src: url(/assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-extrabold.otf);
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url(/assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-regular.otf);
+}
+
+@font-face {
+  font-family: "VisbyMed";
+  src: url(/assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-medium.otf);
 }
 
 /* Global Styles */
@@ -15,32 +30,81 @@
 
 body {
   width: 100%;
-  height: 100lvh;
+  height: calc(100lvh - 5rem);
 }
 
 /* Typography */
 
 h1 {
-  font-family: "Metal";
-  font-size: 4rem;
+  font-family: "VisbyEB";
+  font-size: 2rem;
   text-align: center;
-  -webkit-text-stroke-width: 0.01rem;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: white;
+}
+
+label {
+  font-family: "VisbyMed";
+}
+
+input {
+  font-family: "Visby";
+}
+
+#submit {
+  font-family: "VisbyMed";
+}
+
+.result {
+  font-family: "Visby";
+}
+
+select {
+  font-family: "Visby";
+}
+
+span {
+  font-family: "VisbyEB";
+}
+
+#rs {
+  text-align: center;
+}
+
+h2 {
+  color: white;
+}
+
+/* Header Styles */
+
+header {
+  background-color: black;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+  font-family: "VisbyEB";
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: black;
+  height: 2rem;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Main Styles*/
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Hero Styles */
-
-.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,8 +119,19 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100lvh;
+  height: calc(100lvh - 5rem);
   gap: 1rem;
+}
+
+input,
+select {
+  border: none;
+  border-radius: 0.5rem;
+  padding-left: 0.3rem;
+}
+
+::placeholder {
+  padding-left: 0.3rem;
 }
 
 form {
@@ -80,4 +155,40 @@ form fieldset {
 
 fieldset {
   border-style: none;
+}
+
+#submit {
+  text-decoration: none;
+  border: 1px gray solid;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  color: black;
+  margin-top: 1rem;
+  background-color: white;
+}
+
+/* Output */
+
+.output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result,
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rs {
+  text-decoration: none;
+  border: 1px gray solid;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  color: black;
+  margin-top: 1rem;
 }
