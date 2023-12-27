@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: "VisbyEB";
-  src: url(/assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-extrabold.otf);
+  src: url(./assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-extrabold.otf);
 }
 
 @font-face {
   font-family: "Visby";
-  src: url(/assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-regular.otf);
+  src: url(./assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-regular.otf);
 }
 
 @font-face {
   font-family: "VisbyMed";
-  src: url(/assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-medium.otf);
+  src: url(./assets/fonts/Demo_Fonts/Fontspring-DEMO-visbycf-medium.otf);
 }
 
 /* Global Styles */
