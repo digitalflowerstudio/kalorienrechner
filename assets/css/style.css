@@ -44,7 +44,7 @@ label {
 }
 
 input {
-  font-family: "Visby";
+  font-family: "Arial";
 }
 
 #submit {
@@ -60,7 +60,7 @@ select {
 }
 
 span {
-  font-family: "VisbyEB";
+  font-family: "Arial";
 }
 
 #rs {
